@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/mailsFragment"
+        android:name="com.udemy.fernando.mymail.Fragments.MailsListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        tools:layout="@layout/fragment_list_mails" />
+
+    <fragment
+        android:id="@+id/emailFragment"
+        android:name="com.udemy.fernando.mymail.Fragments.EmailFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        tools:layout="@layout/fragment_email" />
+
+</LinearLayout>

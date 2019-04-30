@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/imageViewColor"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@android:color/holo_blue_dark" />
+
+    <TextView
+        android:id="@+id/textViewSenderDemo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/imageViewColor"
+        android:text="Talent NetWork"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewSubjectDemo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewSenderDemo"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/imageViewColor"
+        android:maxLength="40"
+        android:text="Asi se vivio Jalisco Talent Land 2019"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewSubjectDemo"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/imageViewColor"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textViewMessageDemo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="0.9"
+            android:maxLength="80"
+            android:text="Te esperamos del 13 al 17 de abril Vi..." />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textViewDateDemo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:text="26 abr." />
+
+    <ImageView
+        android:id="@+id/imageViewStar"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/textViewSubjectDemo"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:background="@android:drawable/star_big_off" />
+
+</RelativeLayout>
